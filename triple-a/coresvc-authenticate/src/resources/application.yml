@@ -1,0 +1,13 @@
+server:
+	port:7100
+
+spring:
+	application:
+		name: authenticate
+	config:
+		name: authenticate
+
+eureka:
+	client:
+	    serviceUrl:
+			defaultZone: http://localhost:8761/eureka/

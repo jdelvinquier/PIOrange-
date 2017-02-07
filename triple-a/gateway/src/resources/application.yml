@@ -1,0 +1,14 @@
+server:
+	port: 9090
+
+spring:
+	application:
+		name: zuul
+	config:
+		name: zuul
+	
+zuul:
+	routes:
+		accounting:
+		authenticate:
+		authorize:
