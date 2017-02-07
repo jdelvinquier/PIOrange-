@@ -1,7 +1,7 @@
 server:
-	port: 7979
+  port: 7979
 spring:
-	application:
-		name: hystrix
-	config:
-		name: hystrix
+  application:
+    name: hystrix
+  config:
+    name: hystrix

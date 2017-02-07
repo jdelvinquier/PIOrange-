@@ -1,13 +1,13 @@
 server:
-	port:7000
+  port:7000
 
 spring:
-	application:
-		name: accounting
-	config:
-		name: accounting
+  application:
+    name: accounting
+  config:
+    name: accounting
 		
 eureka:
-	client:
-	    serviceUrl:
-			defaultZone: http://localhost:8761/eureka/
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

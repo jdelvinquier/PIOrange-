@@ -1,13 +1,13 @@
 server:
-	port:7200
+  port: 7200
 
 spring:
-	application:
-		name: authorize
-	config:
-		name: authorize
+  application:
+    name: authorize
+  config:
+    name: authorize
 		
 eureka:
-	client:
-	    serviceUrl:
-			defaultZone: http://localhost:8761/eureka/
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
