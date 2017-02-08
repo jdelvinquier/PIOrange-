@@ -9,4 +9,4 @@ ADD target/AccountingService.jar /app/
 EXPOSE 1813
 
 #Run the application contained in .jar
-CMD ["java","-jar", "/app/"]
+CMD ["java","-jar", "/app/AccountingService.jar"]
