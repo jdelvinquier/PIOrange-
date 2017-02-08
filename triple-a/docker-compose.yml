@@ -1,0 +1,45 @@
+eureka:
+  build: svc-registry
+  restart: always
+  ports:
+    - "8761:8761"
+
+hystrix:
+  build: svc-monitoring
+  restart: always
+  ports:
+    - "7979:7979"
+  links:
+    -eureka
+
+zuul:
+  build: gateway
+  restart: always
+  ports:
+    - "9090:9090"
+  links:
+    -eureka
+
+authenticate:
+  build: coresvc-authenticate
+  restart: always
+  ports:
+    - "1812:1812"
+  links:
+    -eureka
+
+authorize:
+  build: coresvc-authorize
+  restart: always
+  ports:
+    - "1812:1812"
+  links:
+    -eureka
+
+accounting:
+  build: coresvc-accounting
+  restart: always
+  ports:
+    - "1813:1813"
+  links:
+    -eureka
