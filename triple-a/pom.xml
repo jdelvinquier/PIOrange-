@@ -18,12 +18,12 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
 	</properties>
 	
 	<modules>
-		<module>zuul-service</module>
-		<module>eureka-service</module>
-		<module>hystrix-service</module>
-		<module>accounting-service</module>
-		<module>authorize-service</module>
-		<module>authenticate-service</module>
+		<module>service-registry</module>
+		<module>service-monitoring</module>
+		<module>gateway</module>
+		<module>coresvc-accounting</module>
+		<module>coresvc-authorize</module>
+		<module>coresvc-authenticate</module>
 	</modules>
  
 	<dependencies>
