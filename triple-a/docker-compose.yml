@@ -10,7 +10,7 @@ hystrix:
   ports:
     - "7979:7979"
   links:
-    -eureka
+    - eureka
 
 zuul:
   build: gateway
@@ -18,7 +18,7 @@ zuul:
   ports:
     - "9090:9090"
   links:
-    -eureka
+    - eureka
 
 authenticate:
   build: coresvc-authenticate
@@ -26,7 +26,7 @@ authenticate:
   ports:
     - "1812:1812"
   links:
-    -eureka
+    - eureka
 
 authorize:
   build: coresvc-authorize
@@ -34,7 +34,7 @@ authorize:
   ports:
     - "1812:1812"
   links:
-    -eureka
+    - eureka
 
 accounting:
   build: coresvc-accounting
@@ -42,4 +42,4 @@ accounting:
   ports:
     - "1813:1813"
   links:
-    -eureka
+    - eureka

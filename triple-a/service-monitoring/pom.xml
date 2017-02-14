@@ -3,6 +3,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
     <modelVersion>4.0.0</modelVersion>
 	<artifactId>hystrix-service</artifactId>
 	<name>Hystrix Service</name>
+	<packaging>jar</packaging>
 	
 	<parent>
 		<groupId>com.orange.microservices</groupId>

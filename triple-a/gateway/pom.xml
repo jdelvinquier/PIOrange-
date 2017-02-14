@@ -3,6 +3,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/ma
     <modelVersion>4.0.0</modelVersion>
 	<artifactId>zuul-service</artifactId>
 	<name>Zuul Service</name>
+	<packaging>jar</packaging>
 	
 	<parent>
 		<groupId>com.orange.microservices</groupId>
