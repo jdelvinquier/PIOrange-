@@ -10,5 +10,11 @@ spring:
 zuul:
   routes:
     accounting:
+      path:/accounting/**
+      serviceId:accounting
     authenticate:
+      path:/authenticate/**
+      serviceId:authenticate
     authorize:
+      path:/authorize/**
+      serviceId:authorize
